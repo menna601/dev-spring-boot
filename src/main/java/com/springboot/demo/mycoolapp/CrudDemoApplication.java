@@ -17,10 +17,12 @@ public class CrudDemoApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO){
 		return runner -> {
-			createStudent(studentDAO);
-			createMultipleStudents(studentDAO);
-
+			readStudent(studentDAO);
 		};
+	}
+
+	private void readStudent(StudentDAO studentDAO) {
+
 	}
 
 	private void createMultipleStudents(StudentDAO studentDAO) {
